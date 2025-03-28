@@ -6,10 +6,9 @@ import { HeaderComponent } from './domains/shared/components/header/header.compo
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  template: ' <router-outlet/>'
-  //<app-header></app-header>
-})
+  imports: [CommonModule, RouterOutlet, HeaderComponent],
+  template: ' <div class="container mx-auto"> <app-header /><router-outlet /></div>'
+  })
 export class AppComponent {
   title = 'store';
 }
